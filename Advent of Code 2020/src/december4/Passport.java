@@ -1,4 +1,4 @@
-package december4puzzle1;
+package december4;
 
 import java.util.ArrayList;
 

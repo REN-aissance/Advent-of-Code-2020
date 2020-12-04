@@ -1,4 +1,4 @@
-package december4puzzle1;
+package december4;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
+
+	/*
+	 * Accidentally killed part1's files. Luckily they are very similar. Rename
+	 * Passport.hasAllRequiredFields() to isValid() (and delete it) and delete all
+	 * private helper methods and the code should output part 1's solution
+	 */
 
 	private static Scanner fileScanner;
 	private static ArrayList<Passport> passports = new ArrayList<Passport>();
@@ -37,10 +43,10 @@ public class UserInterface {
 				passportData.clear();
 			}
 		}
-		passports.add(new Passport(passportData)); //nextline is empty, but there is still a passport left behind
+		passports.add(new Passport(passportData)); // nextline is empty, but there is still a passport left behind
 		fileScanner.close();
 	}
-	
+
 	public static void main(String[] args) {
 		initializePassports();
 		int validPassports = 0;
