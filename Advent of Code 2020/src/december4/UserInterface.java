@@ -53,7 +53,6 @@ public class UserInterface {
 		for (Passport passport : passports) {
 			if (passport.isValid()) {
 				validPassports++;
-			} else {
 			}
 		}
 		System.out.println(validPassports);
