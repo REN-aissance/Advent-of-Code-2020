@@ -19,7 +19,7 @@ public class Main {
 			System.out.println("IOException");
 		}
 	}
-
+	
 	private static int getLines(String filename) {
 		initializeFileScanner(FILENAME);
 		int i = 0;
@@ -28,7 +28,7 @@ public class Main {
 			i++;
 		}
 		fileScanner.close();
-		return i;
+		return i + 1;
 	}
 
 	private static char[] prepNextCharArray(char[] c) {
